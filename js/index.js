@@ -49,7 +49,7 @@ document.getElementById('button-one').addEventListener('click',function() {
     let getDonation = getAddDonation('addAmount');
     let getTotalMoney=getTotalBlance('totalMoney')
     if(amountInput< 0 ){
-        return alert('pls provied number')
+        return alert('invalid donation amount')
     }
 
     if (isNaN(amountInput)) {
@@ -59,20 +59,32 @@ document.getElementById('button-one').addEventListener('click',function() {
 
     let newDonation = getDonation + amountInput; 
     if(amountInput >getTotalMoney){
-        alert('invalid')
+        alert('invalid donation amount')
         return
     }
     document.getElementById('addAmount').innerText = newDonation;
     let total= getTotalMoney-amountInput
     if(total <0){
-        alert('invalid ')
+        alert('invalid')
         return
 
     }
     document.getElementById('totalMoney').innerText=total
 
     const modal=document.getElementById('my_modal_1')
-    modal.showModal()
+    modal.showModal()   
+    const getDonateTitle=document.getElementById('donate-title').innerText
+    const currentDate = new Date();
+    document.getElementById('historySection').innerHTML+=`
+   
+       <p> 
+       <h4 class="mt-7 text-2xl font-bold"> ${amountInput} Taka is ${getDonateTitle} </h4>
+       <h3> Date: ${currentDate} </h3>
+
+       
+       </p>
+       
+    `
     
 });
 
@@ -84,7 +96,7 @@ document.getElementById('button-2').addEventListener('click', function() {
     let getTotalMoney=getTotalBlance('totalMoney')
        
     if(amountInput< 0 ){
-        return alert('pls provied number')
+        return alert('invalid donation amount')
     }
      
     if (isNaN(amountInput)) {
@@ -104,6 +116,21 @@ document.getElementById('button-2').addEventListener('click', function() {
     document.getElementById('totalMoney').innerText=total
     const modal=document.getElementById('my_modal_1')
     modal.showModal()
+
+
+    const getDonateTitle=document.getElementById('donation-feni').innerText
+    const currentDate = new Date();
+    document.getElementById('historySection').innerHTML+=`
+   
+       <p> 
+       <h4 class="mt-7 text-2xl font-bold"> ${amountInput} Taka is ${getDonateTitle} </h4>
+       <h3> Date: ${currentDate} </h3>
+
+       
+       </p>
+       
+    `
+    
 });
 
 // donation 3
@@ -114,7 +141,7 @@ document.getElementById('button-3').addEventListener('click', function() {
     let getTotalMoney=getTotalBlance('totalMoney')
      
     if(amountInput< 0 ){
-        return alert('pls provied number')
+        return alert('invalid donation amount')
     }
 
     if (isNaN(amountInput)) {
@@ -137,6 +164,21 @@ document.getElementById('button-3').addEventListener('click', function() {
 
     const modal=document.getElementById('my_modal_1')
     modal.showModal()
+
+
+    const getDonateTitle=document.getElementById('donation-quita').innerText
+    const currentDate = new Date();
+    document.getElementById('historySection').innerHTML+=`
+   
+       <p> 
+       <h4 class="mt-7 text-2xl font-bold"> ${amountInput} Taka is ${getDonateTitle} </h4>
+       <h3> Date: ${currentDate} </h3>
+
+       
+       </p>
+       
+    `
+    
 });
 
 // button color
