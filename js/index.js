@@ -77,7 +77,7 @@ document.getElementById('button-one').addEventListener('click',function() {
     const currentDate = new Date();
     document.getElementById('historySection').innerHTML+=`
    
-       <p> 
+       <p"> 
        <h4 class="mt-7 text-2xl font-bold"> ${amountInput} Taka is ${getDonateTitle} </h4>
        <h3> Date: ${currentDate} </h3>
 
@@ -85,7 +85,7 @@ document.getElementById('button-one').addEventListener('click',function() {
        </p>
        
     `
-    
+      document.getElementById('inputOne').value=''
 });
 
 // donation 2
@@ -130,7 +130,7 @@ document.getElementById('button-2').addEventListener('click', function() {
        </p>
        
     `
-    
+    document.getElementById('input-2').value=''
 });
 
 // donation 3
@@ -170,7 +170,7 @@ document.getElementById('button-3').addEventListener('click', function() {
     const currentDate = new Date();
     document.getElementById('historySection').innerHTML+=`
    
-       <p> 
+       <p > 
        <h4 class="mt-7 text-2xl font-bold"> ${amountInput} Taka is ${getDonateTitle} </h4>
        <h3> Date: ${currentDate} </h3>
 
@@ -178,7 +178,7 @@ document.getElementById('button-3').addEventListener('click', function() {
        </p>
        
     `
-    
+    document.getElementById('input-3').value=''
 });
 
 // button color
