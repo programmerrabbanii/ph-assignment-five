@@ -1,9 +1,4 @@
 
-const blogButton = document.getElementById('blog');
-
-blogButton.addEventListener('click', () => {
-    window.location.href = '/faq.html'; 
-});
 
 function toggol(id){
     document.getElementById('main').classList.add('hidden')
@@ -192,3 +187,12 @@ document.getElementById('donationBtn').addEventListener('click', function(){
     document.getElementById('historyBtn').classList.remove('bg-lime-500')
     document.getElementById('donationBtn').classList.add('bg-lime-500')
 })
+
+
+
+
+
+document.getElementById('blog').addEventListener('click', function(){
+    window.location.href='/faq.html'
+})
+
