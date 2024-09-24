@@ -118,7 +118,7 @@ document.getElementById('button-2').addEventListener('click', function() {
     document.getElementById('historySection').innerHTML+=`
    
        <p> 
-       <h4 class="mt-7 text-2xl font-bold"> ${amountInput} Taka is ${getDonateTitle} </h4>
+       <h4 class="mt-6 text-2xl font-bold"> ${amountInput} Taka is ${getDonateTitle} </h4>
        <h3> Date: ${currentDate} </h3>
 
        
