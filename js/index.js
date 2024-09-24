@@ -1,4 +1,6 @@
-
+document.getElementById('blog').addEventListener('click', function(){
+    window.location.href='./faq.html'
+})
 
 function toggol(id){
     document.getElementById('main').classList.add('hidden')
@@ -192,7 +194,5 @@ document.getElementById('donationBtn').addEventListener('click', function(){
 
 
 
-document.getElementById('blog').addEventListener('click', function(){
-    window.location.href='/faq.html'
-})
+
 
